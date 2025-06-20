@@ -1,0 +1,6 @@
+services:
+  - type: static
+    name: iot-client
+    env: static
+    staticPublishPath: dist
+    buildCommand: npm install && npm run build
