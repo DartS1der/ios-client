@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 
+import Register from './pages/Register' // <== Импортируешь компонент
+
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<h1 className="text-3xl font-bold underline">IoT Client Works!</h1>} />
+      <Route path="/" element={<Register />} /> {/* Показываем Register на главной */}
     </Routes>
   </BrowserRouter>
 )
